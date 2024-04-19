@@ -25,20 +25,54 @@ body{
     color: black;
     font-size: 100%;
     border-bottom: 10% black;
+    flex-wrap: wrap;
+    top: 0;
+    margin-top: .5%;
+    
   
     
   
     
 }
 
-#welovedopeshit{
-   /* margin-left: 3.3%; */
+#blogBTN{
+   margin-left: 2%;
+   font-family: KHMenu;
+   padding: .2%;
+   position: relative;
+   top: 10px;
 }
+#picBTN{
+    margin-left: 2%;
+    font-family: KHMenu;
+    padding: .2%;
+    position: relative;
+    top: 10px;
+}
+#gameBTN{
+    margin-left: 2%;
+    font-family: KHMenu;
+    padding: .2%;
+    position: relative;
+    top: 10px;
+}
+
+#projectBTN{
+    margin-left: 2%;
+    font-family: KHMenu;
+    padding: .2%;
+    position: relative;
+    top: 10px;
+}
+
 
 .verticalLines{
    background-color: black;
-    height: 20px;
+    height: 40px;
     width: 3px;
+    ;
+    margin-left: 30.5%;
+    
 
    
     
@@ -50,6 +84,7 @@ body{
     height: 50px;
     margin-left: 22.8%;
     margin-bottom: 100px;
+    display: inline-block;
 }
 
 #line1{
