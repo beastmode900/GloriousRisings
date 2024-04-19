@@ -35,58 +35,6 @@ body{
     
 }
 
-#blogBTN{
-   margin-left: 2%;
-   font-family: KHMenu;
-   padding: .2%;
-   position: relative;
-   top: 10px;
-}
-#picBTN{
-    margin-left: 2%;
-    font-family: KHMenu;
-    padding: .2%;
-    position: relative;
-    top: 10px;
-}
-#gameBTN{
-    margin-left: 2%;
-    font-family: KHMenu;
-    padding: .2%;
-    position: relative;
-    top: 10px;
-}
-
-#projectBTN{
-    margin-left: 2%;
-    font-family: KHMenu;
-    padding: .2%;
-    position: relative;
-    top: 10px;
-}
-
-
-.verticalLines{
-   background-color: black;
-    height: 40px;
-    width: 3px;
-    ;
-    margin-left: 30.5%;
-    
-
-   
-    
-}
-
-#vertLine2{
-    width: 3px;
-    background-color: black;
-    height: 50px;
-    margin-left: 22.8%;
-    margin-bottom: 100px;
-    display: inline-block;
-}
-
 #line1{
     border: none;
     height: 3px;
@@ -94,6 +42,14 @@ body{
     margin-top: 0.5%;
     margin-left: -20px;
     
+}
+
+.topBTN{
+    margin-left: 2%;
+    font-family: KHMenu;
+    padding: .2%;
+    position: relative;
+    top: 10px; 
 }
 
 
