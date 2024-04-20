@@ -1,0 +1,102 @@
+
+* {margin: 0; padding: 0}
+
+
+@font-face {
+    font-family: KHMenu;
+    src: url('../fonts/KHMenu.otf');
+}
+@font-face {
+    font-family: KHTitle;
+    src: url('../fonts/KHTitle.otf');
+}
+.KHmenu{
+    font-family: KHMenu; font-size: 4.2em;
+}
+
+
+
+body{
+    background-color: floralwhite;
+    font-family: KHMenu;
+    font-size: 80%;
+    text-align: center;
+ /*   background-repeat: no-repeat;
+    background-image:url(images/me_couchPleasant.JPG);
+    background-attachment: fixed;
+    background-size: 100% 100%; 
+    this is awesome lol def use this for a diff page*/
+    
+    
+    
+}
+
+.header{
+    text-align: left;
+    margin-left: 1%;
+    color: black;
+    font-size: 100%;
+    border-bottom: 10% black;
+    flex-wrap: wrap;
+    top: 0;
+    margin-top: .5%;
+    
+  
+    
+  
+    
+}
+
+#line1{
+    border: none;
+    height: 3px;
+    background-color: black;
+    margin-top: 0.5%;
+    margin-left: -20px;
+    
+}
+
+.topBTN{
+    margin-left: 2%;
+    font-family: KHMenu;
+    font-size: large;
+    padding: .2%;
+    position: relative;
+    top: 10px; 
+    cursor: pointer;
+}
+
+
+#introLine{
+    text-align: center;
+}
+
+
+#landingImage{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: auto;
+    max-height: auto;
+    display: block;
+    height: 500px;
+    width: 25%;
+}
+
+#belowPic{
+    text-align: center;
+    font-size: x-large;
+}
+
+#secret1{
+   text-align: left;
+   position: absolute;
+   left: 5%; 
+   cursor: pointer;
+   
+}
+
+.hidden{
+  /*  content-visibility: hidden; */
+    opacity: 0;
+    cursor: pointer;
+}
