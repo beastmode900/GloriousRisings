@@ -6,6 +6,9 @@ var clickSecretFound = 0;
 let homeSecretFound = 0;
 var secretCounter = 0;
 let secretCounterHTML = document.getElementById('secretCounter')
+let typingSecretFound = 0;
+let typingSol = 'secret';
+let userTyped = '';
 
 
 
@@ -67,6 +70,20 @@ function playSound(src) {
     const audio = new Audio(src);
     audio.play();
 }
+
+window.addEventListener("keydown", function(event){
+    userTyped = userTyped + event.key;
+    if(userTyped.charAt(userTyped.length-1) != typingSol.charAt(userTyped.length-1)){
+      userTyped = '';
+        return;   
+    }
+    if(userTyped === 'secret'){
+        typingSecretFound = isFound(typingSecretFound);
+        secretAudio.play();
+        return;
+    }
+    
+});
 
 
 });
