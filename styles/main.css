@@ -105,3 +105,11 @@ body{
     float: right;
     margin-right: 1%;
 }
+
+#secretCounter{
+    
+    position: absolute;
+    right: .8%;
+    float: right;
+    bottom: 1%;
+}
