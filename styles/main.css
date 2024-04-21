@@ -100,3 +100,8 @@ body{
     opacity: 0;
     cursor: pointer;
 }
+
+#homeBTN{
+    float: right;
+    margin-right: 1%;
+}
