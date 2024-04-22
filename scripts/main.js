@@ -9,6 +9,10 @@ let secretCounterHTML = document.getElementById('secretCounter')
 let typingSecretFound = 0;
 let typingSol = 'secret';
 let userTyped = '';
+let starSecretFound = 0;
+let starAudio = new Audio('../sounds/khItemGet.mp3');
+const starSecret = document.getElementById('stars');
+
 
 
 
@@ -30,6 +34,10 @@ secret1.addEventListener("click", function(){
     }
 });
 
+starSecret.addEventListener("click", function(){
+    starSecretFound = isFound(starSecretFound);
+    starAudio.play();
+});
 
 const homeBTN =  document.getElementById("homeBTN");
 homeBTN.addEventListener("click", function(){
@@ -44,7 +52,7 @@ homeBTN.addEventListener("click", function(){
 });
 
 
-
+/*
 function reveal(){
     clickSecretFound = isFound(clickSecretFound);
     if(secret1.className === "hidden"){
@@ -55,7 +63,7 @@ function reveal(){
         secret1.className = "hidden";
     }
 
-} 
+} */
 
 function isFound(secret){
     if(secret === 0){
@@ -66,12 +74,14 @@ function isFound(secret){
     return 1;
 }
 
-function playSound(src) {
+/*function playSound(src) {
     const audio = new Audio(src);
     audio.play();
-}
+} */
 
-window.addEventListener("keydown", function(event){
+//when user types 'secret' the fanfare is played and 
+//secretCounter is incremented
+window.addEventListener("keypress", function(event){
     userTyped = userTyped + event.key;
     if(userTyped.charAt(userTyped.length-1) != typingSol.charAt(userTyped.length-1)){
       userTyped = '';
@@ -80,6 +90,7 @@ window.addEventListener("keydown", function(event){
     if(userTyped === 'secret'){
         typingSecretFound = isFound(typingSecretFound);
         secretAudio.play();
+        userTyped = '';
         return;
     }
     
