@@ -12,6 +12,12 @@ let userTyped = '';
 let starSecretFound = 0;
 let starAudio = new Audio('../sounds/khItemGet.mp3');
 const starSecret = document.getElementById('stars');
+const grottoMSG = document.getElementById("grottoMSG");
+const grotto = document.getElementById('grotto');
+
+let riddleFound = 0;
+let riddleTyped = '';
+let riddleSol = 'purple';
 
 
 
@@ -69,6 +75,10 @@ function isFound(secret){
     if(secret === 0){
         secretCounter++;
         secretCounterHTML.innerHTML = 'secrets found: ' + secretCounter + "/5"
+        if(secretCounter === 5){
+            grotto.className = '';
+            grottoMSG.className = '';
+        }
         return 1;
     }
     return 1;
@@ -96,5 +106,23 @@ window.addEventListener("keypress", function(event){
     
 });
 
+window.addEventListener("keypress", function(event){
+    riddleTyped = riddleTyped + event.key;
+    if(riddleTyped.charAt(riddleTyped.length-1) != riddleSol.charAt(riddleTyped.length-1)){
+        riddleFound = '';
+        return;
+    }
+    if(riddleTyped === 'purple'){
+        riddleFound = isFound(riddleFound);
+        secretAudio.play();
+        riddleTyped = '';
+        return;
+    }
+});
+
+
+
 
 });
+
+

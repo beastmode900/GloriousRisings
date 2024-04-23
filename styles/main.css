@@ -66,6 +66,13 @@ body{
     cursor: pointer;
 }
 
+#grotto{
+    font-family: KHMenu;
+    font-size: large;
+    padding: .2%;
+    cursor: pointer;
+}
+
 
 #introLine{
     text-align: center;
@@ -101,6 +108,10 @@ body{
     cursor: pointer;
 }
 
+.hidden2{
+    display: none;
+}
+
 #homeBTN{
     float: right;
     margin-right: 1%;
@@ -112,4 +123,11 @@ body{
     right: .8%;
     float: right;
     bottom: 1%;
+}
+
+#riddle{
+    position: relative;
+    float: right;
+    right: 10%;
+    bottom: 400px;
 }
