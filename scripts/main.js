@@ -15,9 +15,9 @@ const starSecret = document.getElementById('stars');
 const grottoMSG = document.getElementById("grottoMSG");
 const grotto = document.getElementById('grotto');
 
-let riddleFound = 0;
-let riddleTyped = '';
-let riddleSol = 'purple';
+//let riddleFound = 0;
+//let riddleTyped = '';
+//let riddleSol = 'purple';
 
 
 
@@ -70,12 +70,13 @@ function reveal(){
     }
 
 } */
-
+//makes sure secret counter isn't incremented for rediscovering a secret
+//also checks if grotto should be available
 function isFound(secret){
     if(secret === 0){
         secretCounter++;
-        secretCounterHTML.innerHTML = 'secrets found: ' + secretCounter + "/5"
-        if(secretCounter === 5){
+        secretCounterHTML.innerHTML = 'secrets found: ' + secretCounter + "/4"
+        if(secretCounter === 4){
             grotto.className = '';
             grottoMSG.className = '';
         }
@@ -106,7 +107,7 @@ window.addEventListener("keypress", function(event){
     
 });
 
-window.addEventListener("keypress", function(event){
+/*window.addEventListener("keypress", function(event){
     riddleTyped = riddleTyped + event.key;
     if(riddleTyped.charAt(riddleTyped.length-1) != riddleSol.charAt(riddleTyped.length-1)){
         riddleFound = '';
@@ -121,7 +122,7 @@ window.addEventListener("keypress", function(event){
 });
 
 
-
+*/
 
 });
 
