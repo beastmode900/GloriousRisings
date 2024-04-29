@@ -1,3 +1,5 @@
+const winAudio = new Audio("../sounds/kh1fanfare.wav");
+
 const cells = document.querySelectorAll(".cells");
 const bigCells = document.querySelectorAll(".bigCells");
 const turnText = document.querySelector("#turnText");
@@ -24,12 +26,15 @@ let options = [
     ["", "", "", "", "", "", "", "", "",],
     ["", "", "", "", "", "", "", "", "",],
 ];
+
+let bigCellOptions = ["", "", "", "", "", "", "", "", ""];
 let player = "player 1";
 let running = true;
 
 document.addEventListener('DOMContentLoaded', function() {
 
 cells.forEach(cell => cell.addEventListener("click", clicked));
+
 turnText.textContent = `${player}'s turn`;
     
     
@@ -53,7 +58,8 @@ function checkSmallWin(bigCellIndex){
   
 
     if(smallWin){
-        fillTile(bigCellIndex);
+        setTimeout(() => {fillTile(bigCellIndex);}, 400);
+        bigCellOptions[bigCellIndex] = winnerChar;
         currentBigCell = 10;
         checkBigWin();
         //turnText.textContent = `${player} dubbed out`;
@@ -73,9 +79,9 @@ function checkBigWin(){
     let bigWin = false;
     for(let i = 0; i < winConditions.length; i++){
         const dubNation = winConditions[i];
-        const cell1 = options[bigCellIndex][dubNation[0]];
-        const cell2 = options[bigCellIndex][dubNation[1]];
-        const cell3 = options[bigCellIndex][dubNation[2]];
+        const cell1 = bigCellOptions[dubNation[0]];
+        const cell2 = bigCellOptions[dubNation[1]];
+        const cell3 = bigCellOptions[dubNation[2]];
 
         if(cell1 == "" || cell2 == "" || cell3 == ""){
             continue;
@@ -89,14 +95,15 @@ function checkBigWin(){
   
 
     if(bigWin){
-        fillTile(bigCellIndex);
-        currentBigCell = 10;
-        //turnText.textContent = `${player} dubbed out`;
-        //running = false;
+        //fillTile(bigCellIndex);
+        //currentBigCell = 10;
+        turnText.textContent = `${player} dubbed out`;
+        winAudio.play();
+        running = false;
     }
     else if(!options[0].includes("")){
         turnText.textContent = 'draw...';
-        //running = false;
+        running = false;
     }
     else{
         changePlayer();
@@ -107,19 +114,23 @@ function checkBigWin(){
 
 function clicked(){
     const parentCell = this.parentNode;
+   // console.log(parentCell);
     const bigCellIndex = parentCell.getAttribute("bigCellIndex")
     console.log(bigCellIndex);
-    if(parentCell != currentBigCell && currentBigCell < 10){
+    if(bigCellIndex != currentBigCell && currentBigCell < 10){
         return;
     }
     const cellIndex = this.getAttribute("cellIndex");
-
     if(options[bigCellIndex][cellIndex] != "" || !running){
         return;
     }
     updateCell(this, cellIndex, bigCellIndex);
+    currentBigCell = cellIndex;
+    if(bigCellOptions[currentBigCell] != ""){
+        currentBigCell = 10;
+    }
     checkSmallWin(bigCellIndex);
-    
+   
 }
 
 function updateCell(cell, index, bigCellIndex){
@@ -155,7 +166,8 @@ function fillTile(bigCellIndex){
     for(let i = start; i<end; i++){
         cells[i].textContent = winnerChar;
     }
-
+    
+    //changePlayer();
 
 }
 
