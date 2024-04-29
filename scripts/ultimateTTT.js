@@ -1,7 +1,7 @@
 const winAudio = new Audio("../sounds/kh1fanfare.wav");
 
 const cells = document.querySelectorAll(".cells");
-const bigCells = document.querySelectorAll(".bigCells");
+const bigCells = document.querySelectorAll(".bigCell");
 const turnText = document.querySelector("#turnText");
 let winnerChar = "";
 let currentBigCell = 10; //outside of index, can play anywhere
@@ -32,7 +32,9 @@ let player = "player 1";
 let running = true;
 
 document.addEventListener('DOMContentLoaded', function() {
-
+    for(let i = 0; i < 9; i++){
+        document.getElementById(i).style.backgroundColor = "bisque";
+    }
 cells.forEach(cell => cell.addEventListener("click", clicked));
 
 turnText.textContent = `${player}'s turn`;
@@ -61,6 +63,10 @@ function checkSmallWin(bigCellIndex){
         setTimeout(() => {fillTile(bigCellIndex);}, 400);
         bigCellOptions[bigCellIndex] = winnerChar;
         currentBigCell = 10;
+        for(let i = 0; i < 9; i++){
+            setTimeout(() => {document.getElementById(i).style.backgroundColor = "bisque";}, 400); 
+        }
+        //setTimeout(() => {document.getElementById("board").style.backgroundColor = "bisque";}, 400);
         checkBigWin();
         //turnText.textContent = `${player} dubbed out`;
         //running = false;
@@ -99,9 +105,12 @@ function checkBigWin(){
         //currentBigCell = 10;
         turnText.textContent = `${player} dubbed out`;
         winAudio.play();
+        for(let i = 0; i<9; i++){
+            fillTile(i);
+        }
         running = false;
     }
-    else if(!options[0].includes("")){
+    else if(!bigCellOptions.includes("")){
         turnText.textContent = 'draw...';
         running = false;
     }
@@ -125,9 +134,23 @@ function clicked(){
         return;
     }
     updateCell(this, cellIndex, bigCellIndex);
-    currentBigCell = cellIndex;
-    if(bigCellOptions[currentBigCell] != ""){
+    
+    if(bigCellOptions[cellIndex] != ""){
         currentBigCell = 10;
+        for(let i = 0; i < 9; i++){
+            document.getElementById(i).style.backgroundColor = "bisque";
+        }
+    }else{
+        currentBigCell = cellIndex;
+        document.getElementById("board").style.backgroundColor = "darkgray";
+        for(let i = 0; i < 9; i++){
+            if(i == currentBigCell){
+                document.getElementById(i).style.backgroundColor = "bisque";
+            }else{
+                document.getElementById(i).style.backgroundColor = "darkgray";
+            }
+        }
+        
     }
     checkSmallWin(bigCellIndex);
    
