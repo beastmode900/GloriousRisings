@@ -85,7 +85,7 @@ body{
     margin-right: auto;
     width: 650px;
     height: 650px;
-    background-color: bisque;
+    background-color: rgb(255, 228, 196); /* rgb(161, 145, 125);  for the darkened color*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
    /* padding: 10px; */
