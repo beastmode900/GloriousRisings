@@ -137,19 +137,3 @@ body{
     bottom: 400px;
 }
 
-#gaming{
-    font-size: 4.2em;
-}
-
-#gameTable{
-    margin-left: auto;
-    margin-right: auto;
-    
-   
-}
-
-.td{
-    border: 2px solid black;
-    padding: .5%;
-    
-}
