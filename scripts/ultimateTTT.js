@@ -62,19 +62,13 @@ function checkSmallWin(bigCellIndex){
     if(smallWin){
         setTimeout(() => {fillTile(bigCellIndex);}, 400);
         bigCellOptions[bigCellIndex] = winnerChar;
-        currentBigCell = 10;
-        for(let i = 0; i < 9; i++){
-            setTimeout(() => {document.getElementById(i).style.backgroundColor = "bisque";}, 400); 
-        }
+        //currentBigCell = 10;
+      //  for(let i = 0; i < 9; i++){
+      //      setTimeout(() => {document.getElementById(i).style.backgroundColor = "bisque";}, 400); 
+      //  }
         //setTimeout(() => {document.getElementById("board").style.backgroundColor = "bisque";}, 400);
         checkBigWin();
-        //turnText.textContent = `${player} dubbed out`;
-        //running = false;
     }
-   /* else if(!options.includes("")){
-        turnText.textContent = 'draw...';
-        //running = false;
-    } */
     else{
         changePlayer();
     }
