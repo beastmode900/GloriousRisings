@@ -4,6 +4,7 @@ let laughSrc = '../sounds/chipmunklaugh.mp3';
 let laughAudio = new Audio(laughSrc);
 var clickSecretFound = 0;
 let homeSecretFound = 0;
+let rClickSecretFound = 0;
 var secretCounter = 0;
 let secretCounterHTML = document.getElementById('secretCounter')
 let typingSecretFound = 0;
@@ -58,25 +59,13 @@ homeBTN.addEventListener("click", function(){
 });
 
 
-/*
-function reveal(){
-    clickSecretFound = isFound(clickSecretFound);
-    if(secret1.className === "hidden"){
-        secret1.className = "";
-        audio.play();
-      //  secret1.innerHTML = secret1.innerHTML + " <br> <small> " + secretCounter + " </small>"
-    }else{
-        secret1.className = "hidden";
-    }
-
-} */
 //makes sure secret counter isn't incremented for rediscovering a secret
 //also checks if grotto should be available
 function isFound(secret){
     if(secret === 0){
         secretCounter++;
-        secretCounterHTML.innerHTML = 'secrets found: ' + secretCounter + "/4"
-        if(secretCounter === 4){
+        secretCounterHTML.innerHTML = 'secrets found: ' + secretCounter + "/5"
+        if(secretCounter === 5){
             grotto.className = '';
             grottoMSG.className = '';
         }
@@ -85,10 +74,6 @@ function isFound(secret){
     return 1;
 }
 
-/*function playSound(src) {
-    const audio = new Audio(src);
-    audio.play();
-} */
 
 //when user types 'secret' the fanfare is played and 
 //secretCounter is incremented
@@ -107,22 +92,25 @@ window.addEventListener("keypress", function(event){
     
 });
 
-/*window.addEventListener("keypress", function(event){
-    riddleTyped = riddleTyped + event.key;
-    if(riddleTyped.charAt(riddleTyped.length-1) != riddleSol.charAt(riddleTyped.length-1)){
-        riddleFound = '';
-        return;
-    }
-    if(riddleTyped === 'purple'){
-        riddleFound = isFound(riddleFound);
-        secretAudio.play();
-        riddleTyped = '';
-        return;
-    }
-});
+if (document.addEventListener) {
+    document.addEventListener('contextmenu', function(e) {
+        rClickSecret.className = "";
+        rClickSecret = document.getElementById("rClickSecret");
+        rClickSecret.addEventListener("click", function(){
+            secretAudio.play();
+            rClickSecretFound = isFound(rClickSecretFound);
+        });
 
 
-*/
+
+      e.preventDefault();
+    }, false);
+  } else {
+    document.attachEvent('oncontextmenu', function() {
+      alert("You've tried to open context menu");
+      window.event.returnValue = false;
+    });
+  }
 
 });
 

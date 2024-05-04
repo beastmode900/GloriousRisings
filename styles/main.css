@@ -130,10 +130,8 @@ body{
     bottom: 1%;
 }
 
-#riddle{
-    position: relative;
-    float: right;
-    right: 10%;
-    bottom: 400px;
+#rClickSecret{
+    cursor: pointer;
+    
 }
 
