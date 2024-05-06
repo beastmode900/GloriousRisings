@@ -119,7 +119,7 @@ function clicked(){
     const parentCell = this.parentNode;
    // console.log(parentCell);
     const bigCellIndex = parentCell.getAttribute("bigCellIndex")
-    console.log(bigCellIndex);
+   
     if(bigCellIndex != currentBigCell && currentBigCell < 10){
         return;
     }
