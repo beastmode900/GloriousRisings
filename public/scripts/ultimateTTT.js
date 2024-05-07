@@ -1,4 +1,4 @@
-const winAudio = new Audio("../sounds/kh1fanfare.wav");
+const winAudio = new Audio("sounds/kh1fanfare.wav");
 
 const cells = document.querySelectorAll(".cells");
 const bigCells = document.querySelectorAll(".bigCell");

@@ -9,7 +9,7 @@ and no winner is found then print cats game and in both cases display
 new game button
 
 */
-
+const winAudio = new Audio("sounds/kh1fanfare.wav");
 const cells = document.querySelectorAll(".cells");
 const turnText = document.querySelector("#turnText");
 const winConditions = [
@@ -52,6 +52,7 @@ function checkWin(){
 
     if(win){
         turnText.textContent = `${player} dubbed out`;
+        winAudio.play();
         running = false;
     }
     else if(!options.includes('')){

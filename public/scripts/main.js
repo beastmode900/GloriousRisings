@@ -1,6 +1,6 @@
-let secretSrc = '../sounds/kh1fanfare.wav';
+let secretSrc = 'sounds/kh1fanfare.wav';
 let secretAudio = new Audio(secretSrc);
-let laughSrc = '../sounds/chipmunklaugh.mp3';
+let laughSrc = 'sounds/chipmunklaugh.mp3';
 let laughAudio = new Audio(laughSrc);
 var clickSecretFound = 0;
 let homeSecretFound = 0;
@@ -11,7 +11,7 @@ let typingSecretFound = 0;
 let typingSol = 'secret';
 let userTyped = '';
 let starSecretFound = 0;
-let starAudio = new Audio('../sounds/khItemGet.mp3');
+let starAudio = new Audio('sounds/khItemGet.mp3');
 const starSecret = document.getElementById('stars');
 const grottoMSG = document.getElementById("grottoMSG");
 const grotto = document.getElementById('grotto');

@@ -2,6 +2,10 @@
 * {margin: 0; padding: 0}
 
 
+
+
+
+    
 @font-face {
     font-family: KHMenu;
     src: url('../fonts/KHMenu.otf');
@@ -136,3 +140,26 @@ body{
     
 }
 
+#mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #mobile{
+       display: block;
+    }
+    .topBTN{
+        display: none;
+    }
+    .mobileBTN{
+        margin-left: 2%;
+        font-family: KHMenu;
+        font-size: large;
+        padding: .2%;
+        position: relative;
+        top: 10px; 
+        cursor: pointer;  
+    }
+
+    
+}
