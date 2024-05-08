@@ -159,6 +159,7 @@ body{
         position: relative;
         top: 10px; 
         cursor: pointer;  
+        display: inline;
     }
 
     
