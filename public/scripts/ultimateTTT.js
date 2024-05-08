@@ -61,7 +61,11 @@ function checkSmallWin(bigCellIndex){
 
     if(smallWin){
         setTimeout(() => {fillTile(bigCellIndex);}, 400);
+        //fillTile(bigCellIndex);
         bigCellOptions[bigCellIndex] = winnerChar;
+        if(bigCellOptions[bigCellIndex] != ""){
+            currentBigCell = 10;
+        }
         //currentBigCell = 10;
       //  for(let i = 0; i < 9; i++){
       //      setTimeout(() => {document.getElementById(i).style.backgroundColor = "bisque";}, 400); 
@@ -128,7 +132,7 @@ function clicked(){
         return;
     }
     updateCell(this, cellIndex, bigCellIndex);
-    
+    checkSmallWin(bigCellIndex);
     if(bigCellOptions[cellIndex] != ""){
         currentBigCell = 10;
         for(let i = 0; i < 9; i++){
@@ -146,7 +150,7 @@ function clicked(){
         }
         
     }
-    checkSmallWin(bigCellIndex);
+    
    
 }
 
