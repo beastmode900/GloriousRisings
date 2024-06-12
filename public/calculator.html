@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        table{
+            border: 3px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5%;
+        }
+        
+        td{
+            position: relative; 
+        }
+        
+        
+        
+        #logo{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            cursor: pointer;
+        
+        }
+        
+        input{
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+            font-family: KHMenu;
+            border: 1px solid black;
+            cursor: pointer;
+            font-size: large;
+        }
+        
+        .btn{
+            border-radius: 4px;
+        }
+        
+        .btn:hover{
+            transform: scale(1.05);
+        }
+        
+        #display{
+            font-family: calculator;
+            font-size: xx-large;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            border-radius: 12px;
+            width: auto;
+            text-align: right;
+            background-color: lightgray;
+            cursor: default;
+        }
+
+        @font-face {
+            font-family: calculator;
+            src: url('./fonts/Calculator.ttf');
+        }
+
+    </style>
+</head>
+
+
+<body id="body">
+
+    <header class="header">
+        
+        <h1 class="KHMenu">
+            The Stars Have Never Shown as
+            <!-- onclick="audio.play()" to play audio on click-->
+          <a href="blog.html">  <button class="topBTN">blog</button></a>
+          <a href="pictures.html"><button class="topBTN">pictures</button></a>
+           <a href="game.html"> <button class="topBTN">play game</button></a>
+          <a href="portfolio.html">  <button class="topBTN">portfolio</button></a>
+           <a href="indStudy.html"> <button class="topBTN">ind. study (serious blog)</button></a>
+
+            <a href="index.html">  <button class="topBTN" id="homeBTN">home</button></a>
+            <p id="welovedopeshit">Bright as They Have This Year </p>
+            
+        
+           <hr id="line1">
+
+        </h1>
+       
+    </header>
+
+    <nav id="mobile">
+        <a href="blog.html">  <button class="mobileBTN">blog</button></a>
+          <a href="pictures.html"><button class="mobileBTN">pictures</button></a>
+           <a href="game.html"> <button class="mobileBTN">play game</button></a>
+          <a href="portfolio.html">  <button class="mobileBTN">portfolio</button></a>
+           <a href="indStudy.html"> <button class="mobileBTN">ind. study (serious blog)</button></a>
+
+           <a href="index.html">  <button class="mobileBTN" >home</button></a>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <table id="calculator">
+        
+        <tr>
+        <td colspan="4">
+            <input type="text" id="display" >
+        </td>
+        </tr>
+
+
+
+
+        <tr>
+        <td>
+            <input type="button" value="CE" onclick="deleteOne()" class="btn">
+        </td>
+
+        <td>
+            <input type="button" value="X" onclick="display('*')" class="btn">
+        </td>
+
+        <td>
+            <input type="button" value="/" onclick="display('/')" class="btn">
+        </td>
+
+        <td>
+            <img src="./images/newLogo.png" id="logo" onclick="clickLogo()">
+        </td>
+
+        </tr>
+
+        <tr>
+
+        <td>
+            <input type="button" value="1" onclick="display('1')" class="btn">
+        </td>
+
+        <td>
+            <input type="button" value="2" onclick="display('2')" class="btn">
+        </td>
+
+        <td>
+            <input type="button" value="3" onclick="display('3')" class="btn">
+        </td>
+
+        <td>
+            <input type="button" value="C" onclick="deleteAll()" class="btn">
+        </td>
+
+        </tr>
+
+        <tr>
+        <td>
+            <input type="button" value="4" onclick="display('4')" class="btn">
+        </td>
+
+        <td>
+            <input type="button" value="5" onclick="display('5')" class="btn">
+        </td>
+
+        <td>
+            <input type="button" value="6" onclick="display('6')" class="btn">
+        </td>
+
+        <td>
+            <input type="button" value="-" onclick="display('-')" class="btn">
+        </td>
+
+        </tr>
+
+        
+
+        <td>
+            <input type="button" value="7" onclick="display('7')" class="btn">
+        </td>
+
+        <td>
+            <input type="button" value="8" onclick="display('8')" class="btn">
+        </td>
+
+        <td>
+            <input type="button" value="9" onclick="display('9')" class="btn">
+        </td>
+
+        <td>
+            <input type="button" value="+" onclick="display('+')" class="btn">
+        </td>
+
+        <tr>
+            <td> 
+                <input type="button" value="0" onclick="display('0')" class="btn">
+            </td>
+
+            <td>
+                <input type="button" value="." onclick="display('.')" class="btn">
+            </td>
+
+            <td colspan="2">
+                <input type="button" value="=" onclick="result()" class="btn">
+            </td>
+
+        </tr>
+        
+
+
+    </table>
+
+
+    <br>
+
+    <p><i>mini project for internship at AMC</i></p>
+    <br>
+    <p><i>click the logo to spit out a random yugioh card</i></p>
+
+
+
+</body>
+
+
+<script src="./scripts/calculator.js"></script>
+
+</html>
