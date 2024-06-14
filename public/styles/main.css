@@ -127,7 +127,7 @@ body{
 
 #secretCounter{
     
-    position: absolute;
+    position: relative;
     right: .8%;
     float: right;
     bottom: 1%;
