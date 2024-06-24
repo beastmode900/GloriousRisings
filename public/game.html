@@ -10,23 +10,29 @@
 
 <style>
 
-#wrapper{
-    align-items: center;
-}
+    img{
+        width: 300px;
+        height: auto;
+        max-height: 400px;
+        padding: 2%;
+    }
 
-#gameTable{
-    display: grid;
-    margin-left:10%;
-    
-}
+    .gameButton{
+       
+        font-family: KHMenu;
+        font-size: large;
+        padding: .2%;
+        position: relative;
+        top: 10px; 
+        cursor: pointer;
+        
+        
+    }
 
-.pics{
-    width: 400px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;  
-    
-}
+    div{
+        display: inline-block;
+        padding: 2%;
+    }
 
 
 
@@ -63,23 +69,23 @@
     <br>
     <h1 id="gaming">My Games!!!</h1>
     <br>
-    <div id="wrapper">
-        <table id="gameTable">
-            <tr>
-                <td class="games" style="padding: 5%;"><a href="tictactoe.html"><div><img class="pics" src="images/tictactoe.jpg" alt="" > <button style="margin-left: 11.5%;" class="topBTN" >tic tac toe</button></div></a></td>
-                <td class="games" style="padding: 5%;"><a href="ultimateTTT.html"><div><img class="pics" src="images/ultimateTTT.jpg" alt="" > <button style="margin-left: 7.5%;" class="topBTN" >ultimateTTT</button></div></a></td>
-                <td class="games" style="padding: 5%;"><a href="musicguessing.html"><div><img class="pics" src="images/comingsoon.jpg" alt="" > <button style="margin-left: 4%;"  class="topBTN" >music guessing</button></div></a></td>
-            </tr>
 
 
-        </table>
+    <div> <a href="tictactoe.html"> <img src="images/tictactoe.jpg" alt=""> </a>
+        <br>
+             <a href="tictactoe.html"> <button class="gameButton">tictactoe</button> </a>
+       </div>
+
+       <div> <a href="ultimateTTT.html"> <img src="images/ultimateTTT.jpg" alt=""> </a>
+            <br>
+            <a href="ultimateTTT.html"> <button class="gameButton">ultimateTTT</button> </a>
+       </div>
+
+       <div> <a href="musicguessing.html"> <img src="images/comingsoon.jpg" alt=""> </a>
+             <br>
+             <a href="musicguessing.html"> <button class="gameButton">music guessing</button> </a> 
+       </div>
         
-
-
-    </div>
-        
-
-
 
     <nav id="mobile">
         <a href="blog.html">  <button class="mobileBTN">blog</button></a>
