@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" type="image/png" href="images/treepicEdit.png"/>
 
-
+<style>
+    input{
+        font-family: KHMenu;
+    }
+</style>
     
 </head>
 
@@ -40,6 +44,12 @@
 <br>
 
         <input autocomplete="off" type="text" id="myInput" placeholder="Guess the Song!" onkeydown="getValue(event)"> 
+<br>
+<br>
+        <audio id="theSong" src="./songs/LWL - Life Goes On.mp3" controls></audio>
+<br>
+<br>
+        <h2 id="pointCounter">current points: 0 </h2>
         
 
 
