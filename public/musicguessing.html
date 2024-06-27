@@ -7,6 +7,7 @@
     <title>Neupe</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" type="image/png" href="images/treepicEdit.png"/>
+ 
 
 <style>
     input{
@@ -17,6 +18,8 @@
 </head>
 
 <body>
+    
+
 
     <header class="header">
         
@@ -43,13 +46,26 @@
         <p>if an answer has multiple words please ensure a single space between each word</p> 
 <br>
 
-        <input autocomplete="off" type="text" id="myInput" placeholder="Guess the Song!" onkeydown="getValue(event)"> 
+        <input autocomplete="off" type="text" id="songInput" placeholder="guess the song!" onkeydown="getSongValue(event)" > 
 <br>
 <br>
-        <audio id="theSong" src="./songs/LWL - Life Goes On.mp3" controls></audio>
+        <input autocomplete="off" type="text" id="artistInput" placeholder="and the artist.. B)" onkeydown="getArtistValue(event)">
+<br>
+<br>
+        <audio id="theSong" src="" controls></audio>
 <br>
 <br>
         <h2 id="pointCounter">current points: 0 </h2>
+<br>
+        <h2 id="comboDisplay">current combo: 1 x 1</h2>
+<br>
+        <h2 id="gameEnd"></h2>
+<br>
+<br>
+        <h2 hidden id="scoreMessage">enter your name to add this score to the leader boards :D</h2>
+        <br>
+        <input id="nameInput" autocomplete="off" hidden onkeydown="addScoreToDataBase(event)" placeholder="name here :p"></input>
+        
         
 
 
@@ -64,6 +80,8 @@
     </nav>
     </body>
 
-    <script src="scripts/musicguessing.js"></script>
+
+    <script type="" src="./scripts/musicguessing.js"></script>
+
 
 </html>
