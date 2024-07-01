@@ -30,7 +30,7 @@
         <a href="pictures.html"><button class="topBTN">pictures</button></a>
         <a href="game.html"> <button class="topBTN">play game</button></a>
         <a href="portfolio.html">  <button class="topBTN">portfolio</button></a>
-        <a href="indStudy.html"> <button class="topBTN">ind. study (serious blog)</button></a>
+
 
             <a href="index.html">  <button class="topBTN" id="homeBTN">home</button></a>
             <p id="welovedopeshit">Bright as They Have This Year </p>
@@ -43,7 +43,6 @@
     </header>
     <br>
        <h1 > Music Guessing </h1>
-        <p>if an answer has multiple words please ensure a single space between each word</p> 
 <br>
 
         <input autocomplete="off" type="text" id="songInput" placeholder="guess the song!" onkeydown="getSongValue(event)" > 
@@ -64,8 +63,8 @@
 <br>
         <h2 hidden id="scoreMessage">enter your name to add this score to the leader boards :D</h2>
         <br>
-        <input id="nameInput" autocomplete="off" hidden onkeydown="addScoreToDataBase(event)" placeholder="name here :p"></input>
-        
+        <input id="nameInput" autocomplete="off" hidden placeholder="name here :p"></input>
+        <h3 hidden id="pointsForDB"></h3>
         
 
 
@@ -74,14 +73,16 @@
         <a href="pictures.html"><button class="mobileBTN">pictures</button></a>
         <a href="game.html"> <button class="mobileBTN">play game</button></a>
         <a href="portfolio.html">  <button class="mobileBTN">portfolio</button></a>
-        <a href="indStudy.html"> <button class="mobileBTN">ind. study (serious blog)</button></a>
+
 
         <a href="index.html">   <button class="mobileBTN" >home</button></a>
     </nav>
     </body>
 
+    
 
     <script type="" src="./scripts/musicguessing.js"></script>
+    <script type="module" src="./scripts/database.js"></script>
 
 
 </html>

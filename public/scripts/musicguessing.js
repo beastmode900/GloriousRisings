@@ -1,10 +1,11 @@
-const songs = ["LIFE GOES ON", "EMONE", "BLISTER" ];
+const songs = ["LIFEGOESON", "EMONE", "BLISTER" ];
 const artistsToRandomize = ["LWL", "LWL", "FRAIL"];
 const artists = [];
 let points = 0;
 let currentRound = 0;
 let answer = "";
 let running = true;
+let pointsForDB = document.getElementById('pointsForDB');
 let pointCounter = document.getElementById('pointCounter');
 let currentSong = document.getElementById('theSong');
 let srcArray = ["./songs/LWL - Life Goes On.mp3", "./songs/LWL - Emone.mp3", "./songs/Blister.mp3"];
@@ -31,7 +32,7 @@ function getSongValue(event){
         let x = document.getElementById("songInput");
         answer = x.value;
         x.value = '';
-        answer = answer.trim();
+        answer = answer.replace(/ /g, "");
         x.setAttribute("disabled", true);
         checkSongAnswer();
          
@@ -44,7 +45,7 @@ function getArtistValue(event){
         let x = document.getElementById("artistInput");
         answer = x.value;
         x.value = '';
-        answer = answer.trim();
+        answer = answer.replace(/ /g, "");
         x.setAttribute("disabled", true);
         checkArtistAnswer();
          
@@ -105,7 +106,7 @@ else{
     }
 
 function moveRoundForward(){
-    
+    pointsForDB.innerHTML = points;
     if(currentRound >= playlist.length-1 && points < 1 && songAnswered === true && artistAnswered === true){
         let gameEnd = document.getElementById('gameEnd');
         gameEnd.innerHTML = 'game over biaaatch';
@@ -161,18 +162,6 @@ function generatePlaylist(){
 }
 
 
-function addScoreToDataBase(event){
-    if(event.keyCode == 13 ){
-        let x = document.getElementById("nameInput");
-        let userName = x.value;
-        x.value = '';
-        userName = userName.trim();
-        writeUserData(userName);
-    }
-}
 
-function writeUserData(userName){
-
-}
 
 
