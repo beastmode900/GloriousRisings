@@ -10,8 +10,9 @@
  
 
 <style>
-    input{
-        font-family: KHMenu;
+    .top10{
+        font-size: xx-large;
+        
     }
 </style>
     
@@ -41,34 +42,54 @@
         </h1>
 
     </header>
-    <br>
-       <h1 > Music Guessing </h1>
-<br>
 
-        <input autocomplete="off" type="text" id="songInput" placeholder="guess the song!" onkeydown="getSongValue(event)" > 
+<br>
+    <h1>High Scores</h1>
+<br><br>
+<div class="columns">
+    <div class="top10" id="0"></div>
 <br>
 <br>
-        <input autocomplete="off" type="text" id="artistInput" placeholder="and the artist.. B)" onkeydown="getArtistValue(event)">
+    <div class="top10" id="1"></div>
 <br>
 <br>
-        <audio id="theSong" src="" controls></audio>
+    <div class="top10" id="2"></div>
 <br>
 <br>
-        <h2 id="pointCounter">current points: 0 </h2>
-<br>
-        <h2 id="comboDisplay">current combo: 1 x 1</h2>
-<br>
-        <h2 id="gameEnd"></h2>
+    <div class="top10" id="3"></div>
 <br>
 <br>
-        <h2 hidden id="scoreMessage">enter your name to add this score to the leader boards :D</h2>
-        <br>
-        <input id="nameInput" autocomplete="off" hidden placeholder="name here :p"></input>
-        <h3 hidden id="pointsForDB"></h3>
+    <div class="top10" id="4"></div>
+<br>
+<br>
+    <div class="top10" id="5"></div>
+<br>
+<br>
+    <div class="top10" id="6"></div>
+<br>
+<br>
+    <div class="top10" id="7"></div>
+<br>
+<br>
+    <div class="top10" id="8"></div>
+<br>
+<br>
+    <div class="top10" id="9"></div>
+</div>
 
-        <h2>check out the leaderboard!</h2>
-       <a href="highscores.html"> <button style="margin-right: 1.75vw;" class="topBTN">to highscores</button></a>
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <nav id="mobile">
@@ -80,13 +101,9 @@
 
         <a href="index.html">   <button class="mobileBTN" >home</button></a>
     </nav>
+    <small id="nameInput" hidden></small>
 
     </body>
-
-    
-
-    <script type="" src="./scripts/musicguessing.js"></script>
-    <script type="module" src="./scripts/database.js"></script>
-
+    <script src="./scripts/database.js" type="module"></script>
 
 </html>

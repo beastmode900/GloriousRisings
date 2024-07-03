@@ -1,6 +1,6 @@
-// Import the functions you need from the SDKs you need
+
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js';
-import { getDatabase, ref, push } from 'https://www.gstatic.com/firebasejs/9.6.7/firebase-database.js';
+import { getDatabase, ref, push, onValue } from 'https://www.gstatic.com/firebasejs/9.6.7/firebase-database.js';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -68,4 +68,35 @@ form.addEventListener('keydown', (event) => {
     addScoreToDatabase();
 }
   
+});
+
+function displayTopUsers(users) {
+  // Sort users by score in descending order
+  const sortedUsers = Object.entries(users).sort((a, b) => b[1].score - a[1].score);
+
+  // Get the top 10 users
+  const top10Users = sortedUsers.slice(0, 10);
+
+  // Display the top 10 users in the console (or in your UI)
+  console.log('Top 10 Users:');
+  // top10Users.forEach(([userId, user]) => {
+  //   console.log(`${user.name} - Score: ${user.score}`);
+  // });
+  for(let i = 0; i < top10Users.length; i++){
+    let id = i.toString();
+    let position = i + 1;
+    let x = document.getElementById(id);
+    x.innerHTML = "#" + position +": " + top10Users[i][1].name + " - Score: " + top10Users[i][1].score
+  }
+
+}
+
+
+onValue(usersRef, (snapshot) => {
+  const users = snapshot.val();
+  if (users) {
+    displayTopUsers(users);
+  } else {
+    console.log('No users found.');
+  }
 });
