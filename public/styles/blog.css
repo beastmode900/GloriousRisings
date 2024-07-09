@@ -1,10 +1,4 @@
-
 * {margin: 0; padding: 0}
-
-
-
-
-
     
 @font-face {
     font-family: KHMenu;
@@ -23,22 +17,12 @@
 
 }
 
-
-
 body{
     background-color: floralwhite;
     font-family: KHMenu;
     font-size: 80%;
     text-align: center;
-    appearance: none;
- /*   background-repeat: no-repeat;
-    background-image:url(images/me_couchPleasant.JPG);
-    background-attachment: fixed;
-    background-size: 100% 100%; 
-    this is awesome lol def use this for a diff page*/
-    
-    
-    
+    appearance: none; 
 }
 
 .header{
@@ -50,11 +34,6 @@ body{
     flex-wrap: wrap;
     top: 0;
     margin-top: .5%;
-    
-  
-    
-  
-    
 }
 
 
@@ -69,6 +48,9 @@ body{
 
 .topBTN{
     margin-left: 2%;
+}
+
+button{
     font-family: KHMenu;
     font-size: large;
     padding: .2%;
@@ -77,80 +59,15 @@ body{
     cursor: pointer;
 }
 
-#grotto{
-    font-family: KHMenu;
-    font-size: large;
-    padding: .2%;
-    cursor: pointer;
-}
-
-
-#introLine{
-    text-align: center;
-}
-
-
-#landingImage{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height: 500px;
-    width: 40%;
-}
-
-#belowPic{
-    text-align: center;
-    font-size: x-large;
-}
-
-#secret1{
-   text-align: left;
-   position: absolute;
-   left: 5%; 
-   cursor: pointer;
-   
-}
-
-.hidden{
-  /*  content-visibility: hidden; */
-    opacity: 0;
-    cursor: pointer;
-}
-
-.hidden2{
-    display: none;
-}
-
 #homeBTN{
     float: right;
     margin-right: 1%;
 }
 
-#secretCounter{
-    
-    position: relative;
-    right: .8%;
-    float: right;
-    bottom: 1%;
-}
-
-#rClickSecret{
-    cursor: pointer;
-    
-}
-
-
-
-
-
-
-
 #mobile{
     display: none;
 }
-#mobileNote{
-    display: none;
-}
+
 
 @media only screen and (max-width: 768px) {
     #mobile{
@@ -172,6 +89,57 @@ body{
         cursor: pointer;  
         display: inline;
     }
+}
 
-    
+div{
+    display: inline;
+}
+
+#wrapper{
+    justify-content: center;
+    /*border: 2px solid black; */
+}
+
+.imgs{
+    width: 300px;
+    height: auto;
+    max-height: 400px;
+    padding: .05%;
+}
+
+.vids{
+    width: 300px;
+    height: auto;
+    max-height: 400px;
+    padding: .05%;
+}
+
+#testImg1{
+    content: url(../images/bridgeRainbow.JPG);
+}
+
+#testImg2{
+    content: url(../images/leidan1.WEBP);
+}
+
+#testImg3{
+    content: url(../images/me_couchPleasant.JPG);
+}
+
+#testImg4{
+    height: 250px;
+    width: 250px;
+    content: url(../images/emptyApartmentPic.png);
+}
+
+#testImg5{
+    height: 200px;
+    width: 250px;
+    content: url(../images/me_pointing_smiling.JPG);
+}
+
+#testImg6{
+    height: 100px;
+    width: 200px;
+    content: url(../images/me_couchPleasant.JPG);
 }
