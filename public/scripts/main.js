@@ -1,7 +1,9 @@
 let secretSrc = 'sounds/kh1fanfare.wav';
 let secretAudio = new Audio(secretSrc);
+secretAudio.volume = .3;
 let laughSrc = 'sounds/chipmunklaugh.mp3';
 let laughAudio = new Audio(laughSrc);
+laughAudio.volume = .3;
 var clickSecretFound = 0;
 let homeSecretFound = 0;
 let rClickSecretFound = 0;
@@ -12,19 +14,11 @@ let typingSol = 'secret';
 let userTyped = '';
 let starSecretFound = 0;
 let starAudio = new Audio('sounds/khItemGet.mp3');
+starAudio.volume = .3;
 const starSecret = document.getElementById('stars');
 const grottoMSG = document.getElementById("grottoMSG");
 const grotto = document.getElementById('grotto');
-let musicAudio = new Audio('sounds/musicForAirports');
-
-//let riddleFound = 0;
-//let riddleTyped = '';
-//let riddleSol = 'purple';
-
-
-
-
-
+let musicAudio = new Audio('sounds/musicForAirports.mp3');
 
 
 
@@ -115,8 +109,9 @@ if (document.addEventListener) {
 
 
 
-  musicAudio.volume = 0.02;
-  musicAudio.play
+   musicAudio.volume = 0.2;
+   musicAudio.loop;
+   musicAudio.play();
 
 });
 

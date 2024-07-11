@@ -128,7 +128,7 @@ body{
 
 #secretCounter{
     
-    position: relative;
+    position: fixed;
     right: .8%;
     float: right;
     bottom: 1%;
@@ -139,6 +139,17 @@ body{
     
 }
 
+#pauseMusic{
+    position:fixed;
+    float: left;
+    left: .8%;
+    bottom: 10px;
+    font-family: KHMenu;
+    font-size: large;
+    padding: .2%;
+    cursor: pointer;
+    
+}
 
 
 
