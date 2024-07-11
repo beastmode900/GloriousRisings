@@ -142,7 +142,7 @@ div{
 }
 
 .modal-content img {
-    height: 25%;
+    height: 55%;
     max-width: auto;
     /* margin-left: 20%; */
 }
@@ -166,6 +166,11 @@ div{
         height: 1000px;
         padding-right: 197px;
         padding-top: 150px;
+    }
+
+    .modal-content img{
+        height: 25%;
+        max-width: auto;
     }
 }
 
