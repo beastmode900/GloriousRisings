@@ -1,8 +1,21 @@
+/*
+
+
+!!!!!!!!!!!!!!!!!!!!!! MOST OF THIS CODE WAS WRITTEN BY  
+"beyondthecraig" ON INSTAGRAM I CHANGED IT A LITTLE TO FIT 
+MY NEEDS BUT CREDIT IS STILL THERES FOR THIS SCRIPT !!!!!!!!!!!!!!!!!!!!!
+
+
+*/
+
+
+
+
 var textBlocks = [
     {
         //1
-        text: "test 1",
-        date: "7/8/24",
+        text: "the first post on my website! thank you for visiting :)",
+        date: "7/10/24",
         imgs: "",
         vids: "",
     },
@@ -22,11 +35,22 @@ var textBlocks = [
         imgs: "",
         vids: "",
     },
+
+    {
+        //4
+        text: "merppp nothing here yet",
+        date: "7/10/24",
+        imgs: "",
+        vids: "",
+    }
 ]
 
+// HTML for images and videos to be inserted in the corresponding blog post
 const actions = {
-    0: "<div class=\"imgs\" id=\"testImg1\"></div><div class=\"imgs\" id=\"testImg2\"></div><div class=\"imgs\" id=\"testImg3\"></div>",
-    2: `<div class=\"imgs\" id=\"testImg4\"></div><div class=\"imgs\" id=\"testImg5\"></div><div class=\"imgs\" id=\"testImg6\"></div><br>` //<video controls class=\"vids\" id=\"testVid1\"> <source src="../images/first_waveshine_usmash.mp4" type="video/mp4"> </video>`
+    0: "<div class=\"imgs\" id=\"bgimg1\"></div><div class=\"imgs\" id=\"bgimg2\"></div><div class=\"imgs\" id=\"bgimg3\"></div>",
+    2: `<div class=\"imgs\" id=\"testImg4\"></div><div class=\"imgs\" id=\"testImg5\"></div><div class=\"imgs\" id=\"testImg6\"></div><br>        <video class="vids" controls="controls" loop>
+            <source src="images/7cClear.mp4">
+        </video>`, 
 }
 
 
@@ -44,6 +68,7 @@ var goBtn = document.getElementById("go-btn");
 var searchBtn = document.getElementById("search-btn");
 var pageNum = document.getElementById("page-num");
 var imgBlock = document.getElementById("img-block");
+var input = document.getElementById("dropdown");
 
 dropdown.addEventListener("change", function(){
 });
@@ -55,7 +80,6 @@ function updateSubject() {
   else{
     subject.insertAdjacentHTML("afterbegin",code)
   }
-  
 }
 
 function jump(){
@@ -76,6 +100,7 @@ function jump(){
 function updateTextBlock() {
   
   pageNum.textContent = index+1 + " of " + textBlocks.length;
+  input.setAttribute("placeholder", "go to blog posts 1-" + textBlocks.length)
   textBlockEl.innerHTML = textBlocks[index].text;
   dateBlockEl.textContent = textBlocks[index].date;
   vidBlockEl.textContent = textBlocks[index].vids;

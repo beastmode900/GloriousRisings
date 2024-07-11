@@ -91,6 +91,10 @@ button{
     }
 }
 
+#text-block{
+    font-size: medium;
+}
+
 div{
     display: inline;
 }
@@ -114,16 +118,70 @@ div{
     padding: .05%;
 }
 
-#testImg1{
-    content: url(../images/bridgeRainbow.JPG);
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:auto;
+    
+    overflow: hidden;
+    object-fit:contain;
+    background-color: black;
 }
 
-#testImg2{
-    content: url(../images/leidan1.WEBP);
+.modal-content{
+    background-color:black;
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    height: 1000px;
+    padding: 20px;
 }
 
-#testImg3{
-    content: url(../images/me_couchPleasant.JPG);
+.modal-content img {
+    height: 25%;
+    max-width: auto;
+    /* margin-left: 20%; */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:900px){
+    .modal-content {
+        background-color: black;
+        margin: auto;
+        display: block;
+        max-width: 85%;
+        height: 1000px;
+        padding-right: 197px;
+        padding-top: 150px;
+    }
+}
+
+#bgimg1{
+    content: url(../images/me_pointing_smiling.JPG);
+    height: 300px;
+}
+
+#bgimg2{
+    content: url(../images/thankyou_food.JPG);
+    height: 300px;
+}
+
+#bgimg3{
+    content: url(../images/treepicEdit.png);
+    height: 300px;
 }
 
 #testImg4{

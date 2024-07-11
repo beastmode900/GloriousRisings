@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neupe</title>
+    <link rel="stylesheet" href="styles/blog.css">
+    <link rel="icon" type="image/png" href="images/treepicEdit.png"/>
+
+    
+</head>
+
+<body>
+
+    <header class="header">
+        
+        <h1 class="KHMenu">
+            The Stars Have Never Shown as
+            <!-- onclick="audio.play()" to play audio on click-->
+          <a href="blog.html">  <button class="topBTN">blog</button></a>
+          <a href="pictures.html"><button class="topBTN">pictures</button></a>
+           <a href="game.html"> <button class="topBTN">play game</button></a>
+          <a href="portfolio.html">  <button class="topBTN">portfolio</button></a>
+
+            <a href="index.html">  <button class="topBTN" id="homeBTN">home</button></a>
+            <p id="welovedopeshit">Bright as They Have This Year </p>
+            
+        
+           <hr id="line1">
+
+        </h1>
+       
+    </header>
+    <br>
+    <div id="wrapper">
+        <div class="imgs" id="bgimg1" onclick="enlargeImage('./images/me_pointing_smiling.JPG')"></div>
+        <div class="imgs" id="bgimg2" onclick="enlargeImage('./images/thankyou_food.JPG')"></div>
+        <div class="imgs" id="bgimg3" onclick="enlargeImage('./images/treepicEdit.png')"></div>
+
+        <div class="modal" id="myModal">
+            <span class="close" onclick="closeModal()">X</span>
+            <div class="modal-content">
+                <img src="" id="modal-img">
+            </div>
+        </div>
+    </div>
+
+    <nav id="mobile">
+        <a href="blog.html">  <button class="mobileBTN">blog</button></a>
+          <a href="pictures.html"><button class="mobileBTN">pictures</button></a>
+           <a href="game.html"> <button class="mobileBTN">play game</button></a>
+          <a href="portfolio.html">  <button class="mobileBTN">portfolio</button></a>
+
+           <a href="index.html">  <button class="mobileBTN" >home</button></a>
+    </nav>
+    </body>
+
+    <script src="./scripts/blogGallery.js"></script>
+
+    <style>
+
+        .imgs{
+            max-height: 150px;
+            max-width: 150px;
+        }
+        
+        
+        </style>
+
+</html>

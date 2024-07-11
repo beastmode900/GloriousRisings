@@ -15,6 +15,7 @@ let starAudio = new Audio('sounds/khItemGet.mp3');
 const starSecret = document.getElementById('stars');
 const grottoMSG = document.getElementById("grottoMSG");
 const grotto = document.getElementById('grotto');
+let musicAudio = new Audio('sounds/musicForAirports');
 
 //let riddleFound = 0;
 //let riddleTyped = '';
@@ -111,6 +112,11 @@ if (document.addEventListener) {
       window.event.returnValue = false;
     });
   }
+
+
+
+  musicAudio.volume = 0.02;
+  musicAudio.play
 
 });
 
