@@ -5,24 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neupe</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/blog.css">
     <link rel="icon" type="image/png" href="images/treepicEdit.png"/>
  
 
-<style>
-    img{
-        width: 300px;
-        height: auto;
-        max-height: 400px;
-        padding: 2%;
-    }
 
-
-    div{
-        display: inline-block;
-        
-    }
-</style>
     
 </head>
 
@@ -50,12 +37,36 @@
         </h1>
 
     </header>
+    <br>
+<p>click on images to enlarge</p>
 
 <br>
+<div id="wrapper">
+    <div class="imgs" id="archImg1" onclick="enlargeArchiveImage('./images/digitalArchive/IMG_2344.jpg', 0)"></div>
+    <div class="imgs" id="archImg2" onclick="enlargeArchiveImage('./images/digitalArchive/IMG_2345.jpg', 0)"></div>
+    <div class="imgs" id="archImg3" onclick="enlargeArchiveImage('./images/digitalArchive/IMG_2346.jpg', 0)"></div>
+<!-- same index because same thing and same text -->
+    <div class="imgs" id="archImg4" onclick="enlargeArchiveImage('./images/digitalArchive/IMG_2347.jpg', 1)"></div>
+    <div class="imgs" id="archImg5" onclick="enlargeArchiveImage('./images/digitalArchive/IMG_2348.jpg', 1)"></div>
 
-<div> <img src="images/me_fingers_together_serious.JPG" alt=""> </div>
-<div> <img src="images/emptyApartmentPic.png" alt=""> </div>
-<div> <img src="images/bridgeRainbow.JPG" alt=""> </div>
+    <div class="imgs" id="archImg6" onclick="enlargeArchiveImage('./images/digitalArchive/IMG_2349.jpg', 2)"></div>
+    <div class="imgs" id="archImg7" onclick="enlargeArchiveImage('./images/digitalArchive/IMG_2350.jpg', 2)"></div>
+<br>
+    <div class="imgs" id="archImg8" onclick="enlargeArchiveImage('./images/digitalArchive/IMG_2351.jpg', 3)"></div>
+    <div class="imgs" id="archImg9" onclick="enlargeArchiveImage('./images/digitalArchive/IMG_2352.jpg', 3)"></div>
+
+
+
+
+    <div class="modal" id="myModal">
+        <span class="close" onclick="closeModal()">X</span>
+        <div class="modal-content">
+            <img src="" id="modal-img">
+            <br><br>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+</div>
 
 
 
@@ -71,6 +82,20 @@
     <a href="index.html">   <button class="mobileBTN" >home</button></a>
 </nav>
 </body>
+
+<script src="./scripts/blogGallery.js"></script>
+
+<style>
+    .imgs{
+        max-height: 150px;
+        max-width: 150px;
+    }
+
+    #modal-text{
+        color: aliceblue;
+        font-size: large;
+    }
+    </style>
 
 
 </html>

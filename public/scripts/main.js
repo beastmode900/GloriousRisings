@@ -111,7 +111,19 @@ if (document.addEventListener) {
 
    musicAudio.volume = 0.2;
    musicAudio.loop;
-   musicAudio.play();
+   let muteBTN = document.getElementById("pauseMusic");
+   muteBTN.addEventListener("click", toggleMusic)
+
+   function toggleMusic(){
+    if(!musicAudio.paused){ //music is playing
+        musicAudio.pause();
+        muteBTN.innerText = "unmute";
+    }else{ //is not playing
+        musicAudio.play();
+        muteBTN.innerText = "mute";
+
+    } 
+   }
 
 });
 

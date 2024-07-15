@@ -206,3 +206,45 @@ div{
     width: 200px;
     content: url(../images/me_couchPleasant.JPG);
 }
+
+/*------------------------------Separation Between Blog Pics and Archive Pics----------------------------------*/
+
+/* stacy orico pics */
+#archImg1{ 
+    content: url(../images/digitalArchive/IMG_2344.jpg);
+}
+
+#archImg2{
+    content: url(../images/digitalArchive/IMG_2345.jpg);
+}
+
+#archImg3{
+    content: url(../images/digitalArchive/IMG_2346.jpg);
+}
+
+/* Ostraca - Disaster */
+#archImg4{
+    content: url(../images/digitalArchive/IMG_2347.jpg);
+}
+
+#archImg5{
+    content: url(../images/digitalArchive/IMG_2348.jpg);
+}
+
+/* In Wolves Clothing - It Eats Itself */
+#archImg6{
+    content: url(../images/digitalArchive/IMG_2349.jpg);
+}
+
+#archImg7{
+    content: url(../images/digitalArchive/IMG_2350.jpg);
+}
+
+/* Knumears - A Shout to See */
+#archImg8{
+    content: url(../images/digitalArchive/IMG_2351.jpg);
+}
+
+#archImg9{
+    content: url(../images/digitalArchive/IMG_2352.jpg);
+}
