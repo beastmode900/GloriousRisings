@@ -153,7 +153,7 @@ div{
     right: 10px;
     font-size: 30px;
     font-weight: bold;
-    color: red;
+    color:crimson;
     cursor: pointer;
 }
 
@@ -247,4 +247,127 @@ div{
 
 #archImg9{
     content: url(../images/digitalArchive/IMG_2352.jpg);
+}
+
+/* The Cranberries - No Need to Argue */
+#archImg10{
+    content: url(../images/digitalArchive/IMG_2353.jpg);
+}
+
+#archImg11{
+    content: url(../images/digitalArchive/IMG_2354.jpg);
+}
+
+#archImg12{
+    content: url(../images/digitalArchive/IMG_2355.jpg);
+}
+
+/* Chune - Burnt */
+#archImg13{
+    content: url(../images/digitalArchive/IMG_2356.jpg);
+}
+#archImg14{
+    content: url(../images/digitalArchive/IMG_2357.jpg);
+}
+#archImg15{
+    content: url(../images/digitalArchive/IMG_2358.jpg);
+}
+
+/* Saves the Day - Early Recordings */
+#archImg16{
+    content: url(../images/digitalArchive/IMG_2372.jpg);
+}
+#archImg17{
+    content: url(../images/digitalArchive/IMG_2373.jpg);
+}
+#archImg18{
+    content: url(../images/digitalArchive/IMG_2374.jpg);
+}
+
+/* Hum - You'd Prefer an Astronaut */
+#archImg19{
+    content: url(../images/digitalArchive/IMG_2375.jpg);
+}
+#archImg20{
+    content: url(../images/digitalArchive/IMG_2376.jpg);
+}
+#archImg21{
+    content: url(../images/digitalArchive/IMG_2377.jpg);
+}
+
+/* Cursive - Domestica */
+#archImg22{
+    content: url(../images/digitalArchive/IMG_2378.jpg);
+}
+#archImg23{
+    content: url(../images/digitalArchive/IMG_2379.jpg);
+}
+#archImg24{
+    content: url(../images/digitalArchive/IMG_2380.jpg);
+}
+
+/* Kate Bush - Hounds of Love */
+#archImg25{
+    content: url(../images/digitalArchive/IMG_2381.jpg);
+}
+#archImg26{
+    content: url(../images/digitalArchive/IMG_2382.jpg);
+}
+#archImg27{
+    content: url(../images/digitalArchive/IMG_2383.jpg);
+}
+
+/* Carly Rae Jepsen - The Loneliest Time */
+#archImg28{
+    content: url(../images/digitalArchive/IMG_2387.jpg);
+}
+#archImg29{
+    content: url(../images/digitalArchive/IMG_2388.jpg);
+}
+#archImg30{
+    content: url(../images/digitalArchive/IMG_2389.jpg);
+}
+
+/* Joanna Newsom - Ys */
+#archImg31{
+    content: url(../images/digitalArchive/IMG_2390.jpg);
+}
+#archImg32{
+    content: url(../images/digitalArchive/IMG_2391.jpg);
+}
+#archImg33{
+    content: url(../images/digitalArchive/IMG_2392.jpg);
+}
+
+/* Blink-182 - S/T */
+#archImg34{
+    content: url(../images/digitalArchive/IMG_2393.jpg);
+}
+#archImg35{
+    content: url(../images/digitalArchive/IMG_2394.jpg);
+}
+#archImg36{
+    content: url(../images/digitalArchive/IMG_2395.jpg);
+}
+
+/* Jimmy Eat World - Static Prevails */
+#archImg37{
+    content: url(../images/digitalArchive/IMG_2397.jpg);
+}
+#archImg38{
+    content: url(../images/digitalArchive/IMG_2398.jpg);
+}
+#archImg39{
+    content: url(../images/digitalArchive/IMG_2399.jpg);
+}
+
+/* Blink-182 - Take off Your Pants and Jacket */
+#archImg40{
+    content: url(../images/digitalArchive/IMG_2400.jpg);
+}
+#archImg41{
+    content: url(../images/digitalArchive/IMG_2401.jpg);
+}
+#archImg42{
+    content: url(../images/digitalArchive/IMG_2402.jpg);
 }
