@@ -43,6 +43,22 @@ textBlocks = [
 "Joanna Newsom - Ys",
 "Blink-182 - S/T",
 "Jimmy Eat World - Static Prevails",
-"Blink-182 - Take Off Your Pants and Jacket"
+"Blink-182 - Take Off Your Pants and Jacket",
+"Natalie Imbruglia - Left in the Middle",
+"Rainer Maria - Look Now Look Again",
+"The Get Up Kids - Four Minute Mile",
+"The Get Up Kids - Something to Write Home About",
+"allthepiecesgatheredbymay - demos",
+"The Civil War in France - early discography",
+"OLTH - every day is sOmeOne's speciaL day",
+"Middle Earth - Demo 2023",
+"Stumik Bug/Bottle Violence - stumikviolence",
+"Lanemeyer - If Theres a Will, Theres Still Nothing",
+"pageninetyine - document #5",
+"Your Arms Are My Cocoon - S/T",
+"herlovebeheadsdaisies - carving initials",
+"In Loving Memory - As Years Pass And Feel Like Seconds",
+"algernon cadwallader - S/T",
+"Jejune - R.I.P.",
 
 ]

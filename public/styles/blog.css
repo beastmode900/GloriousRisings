@@ -209,165 +209,150 @@ div{
 
 /*------------------------------Separation Between Blog Pics and Archive Pics----------------------------------*/
 
-/* stacy orico pics */
-#archImg1{ 
-    content: url(../images/digitalArchive/IMG_2344.jpg);
-}
-
-#archImg2{
-    content: url(../images/digitalArchive/IMG_2345.jpg);
-}
-
-#archImg3{
-    content: url(../images/digitalArchive/IMG_2346.jpg);
-}
+/* Stacie Orrico - S/T */
+#archImg1{content: url(../images/digitalArchive/IMG_2344.jpg);}
+#archImg2{content: url(../images/digitalArchive/IMG_2345.jpg);}
+#archImg3{content: url(../images/digitalArchive/IMG_2346.jpg);}
 
 /* Ostraca - Disaster */
-#archImg4{
-    content: url(../images/digitalArchive/IMG_2347.jpg);
-}
+#archImg4{content: url(../images/digitalArchive/IMG_2347.jpg);}
+#archImg5{content: url(../images/digitalArchive/IMG_2348.jpg);}
 
-#archImg5{
-    content: url(../images/digitalArchive/IMG_2348.jpg);
-}
-
-/* In Wolves Clothing - It Eats Itself */
-#archImg6{
-    content: url(../images/digitalArchive/IMG_2349.jpg);
-}
-
-#archImg7{
-    content: url(../images/digitalArchive/IMG_2350.jpg);
-}
+/* in wolves clothing - it eats itself */
+#archImg6{content: url(../images/digitalArchive/IMG_2349.jpg);}
+#archImg7{content: url(../images/digitalArchive/IMG_2350.jpg);}
 
 /* Knumears - A Shout to See */
-#archImg8{
-    content: url(../images/digitalArchive/IMG_2351.jpg);
-}
-
-#archImg9{
-    content: url(../images/digitalArchive/IMG_2352.jpg);
-}
+#archImg8{content: url(../images/digitalArchive/IMG_2351.jpg);}
+#archImg9{content: url(../images/digitalArchive/IMG_2352.jpg);}
 
 /* The Cranberries - No Need to Argue */
-#archImg10{
-    content: url(../images/digitalArchive/IMG_2353.jpg);
-}
-
-#archImg11{
-    content: url(../images/digitalArchive/IMG_2354.jpg);
-}
-
-#archImg12{
-    content: url(../images/digitalArchive/IMG_2355.jpg);
-}
+#archImg10{content: url(../images/digitalArchive/IMG_2353.jpg);}
+#archImg11{content: url(../images/digitalArchive/IMG_2354.jpg);}
+#archImg12{content: url(../images/digitalArchive/IMG_2355.jpg);}
 
 /* Chune - Burnt */
-#archImg13{
-    content: url(../images/digitalArchive/IMG_2356.jpg);
-}
-#archImg14{
-    content: url(../images/digitalArchive/IMG_2357.jpg);
-}
-#archImg15{
-    content: url(../images/digitalArchive/IMG_2358.jpg);
-}
+#archImg13{content: url(../images/digitalArchive/IMG_2356.jpg);}
+#archImg14{content: url(../images/digitalArchive/IMG_2357.jpg);}
+#archImg15{content: url(../images/digitalArchive/IMG_2358.jpg);}
 
 /* Saves the Day - Early Recordings */
-#archImg16{
-    content: url(../images/digitalArchive/IMG_2372.jpg);
-}
-#archImg17{
-    content: url(../images/digitalArchive/IMG_2373.jpg);
-}
-#archImg18{
-    content: url(../images/digitalArchive/IMG_2374.jpg);
-}
+#archImg16{content: url(../images/digitalArchive/IMG_2372.jpg);}
+#archImg17{content: url(../images/digitalArchive/IMG_2373.jpg);}
+#archImg18{content: url(../images/digitalArchive/IMG_2374.jpg);}
 
 /* Hum - You'd Prefer an Astronaut */
-#archImg19{
-    content: url(../images/digitalArchive/IMG_2375.jpg);
-}
-#archImg20{
-    content: url(../images/digitalArchive/IMG_2376.jpg);
-}
-#archImg21{
-    content: url(../images/digitalArchive/IMG_2377.jpg);
-}
+#archImg19{content: url(../images/digitalArchive/IMG_2375.jpg);}
+#archImg20{content: url(../images/digitalArchive/IMG_2376.jpg);}
+#archImg21{content: url(../images/digitalArchive/IMG_2377.jpg);}
 
 /* Cursive - Domestica */
-#archImg22{
-    content: url(../images/digitalArchive/IMG_2378.jpg);
-}
-#archImg23{
-    content: url(../images/digitalArchive/IMG_2379.jpg);
-}
-#archImg24{
-    content: url(../images/digitalArchive/IMG_2380.jpg);
-}
+#archImg22{content: url(../images/digitalArchive/IMG_2378.jpg);}
+#archImg23{content: url(../images/digitalArchive/IMG_2379.jpg);}
+#archImg24{content: url(../images/digitalArchive/IMG_2380.jpg);}
 
 /* Kate Bush - Hounds of Love */
-#archImg25{
-    content: url(../images/digitalArchive/IMG_2381.jpg);
-}
-#archImg26{
-    content: url(../images/digitalArchive/IMG_2382.jpg);
-}
-#archImg27{
-    content: url(../images/digitalArchive/IMG_2383.jpg);
-}
+#archImg25{content: url(../images/digitalArchive/IMG_2381.jpg);}
+#archImg26{content: url(../images/digitalArchive/IMG_2382.jpg);}
+#archImg27{content: url(../images/digitalArchive/IMG_2383.jpg);}
 
 /* Carly Rae Jepsen - The Loneliest Time */
-#archImg28{
-    content: url(../images/digitalArchive/IMG_2387.jpg);
-}
-#archImg29{
-    content: url(../images/digitalArchive/IMG_2388.jpg);
-}
-#archImg30{
-    content: url(../images/digitalArchive/IMG_2389.jpg);
-}
+#archImg28{content: url(../images/digitalArchive/IMG_2387.jpg);}
+#archImg29{content: url(../images/digitalArchive/IMG_2388.jpg);}
+#archImg30{content: url(../images/digitalArchive/IMG_2389.jpg);}
 
 /* Joanna Newsom - Ys */
-#archImg31{
-    content: url(../images/digitalArchive/IMG_2390.jpg);
-}
-#archImg32{
-    content: url(../images/digitalArchive/IMG_2391.jpg);
-}
-#archImg33{
-    content: url(../images/digitalArchive/IMG_2392.jpg);
-}
+#archImg31{content: url(../images/digitalArchive/IMG_2390.jpg);}
+#archImg32{content: url(../images/digitalArchive/IMG_2391.jpg);}
+#archImg33{content: url(../images/digitalArchive/IMG_2392.jpg);}
 
 /* Blink-182 - S/T */
-#archImg34{
-    content: url(../images/digitalArchive/IMG_2393.jpg);
-}
-#archImg35{
-    content: url(../images/digitalArchive/IMG_2394.jpg);
-}
-#archImg36{
-    content: url(../images/digitalArchive/IMG_2395.jpg);
-}
+#archImg34{content: url(../images/digitalArchive/IMG_2393.jpg);}
+#archImg35{content: url(../images/digitalArchive/IMG_2394.jpg);}
+#archImg36{content: url(../images/digitalArchive/IMG_2395.jpg);}
 
 /* Jimmy Eat World - Static Prevails */
-#archImg37{
-    content: url(../images/digitalArchive/IMG_2397.jpg);
-}
-#archImg38{
-    content: url(../images/digitalArchive/IMG_2398.jpg);
-}
-#archImg39{
-    content: url(../images/digitalArchive/IMG_2399.jpg);
-}
+#archImg37{content: url(../images/digitalArchive/IMG_2397.jpg);}
+#archImg38{content: url(../images/digitalArchive/IMG_2398.jpg);}
+#archImg39{content: url(../images/digitalArchive/IMG_2399.jpg);}
 
 /* Blink-182 - Take off Your Pants and Jacket */
-#archImg40{
-    content: url(../images/digitalArchive/IMG_2400.jpg);
-}
-#archImg41{
-    content: url(../images/digitalArchive/IMG_2401.jpg);
-}
-#archImg42{
-    content: url(../images/digitalArchive/IMG_2402.jpg);
-}
+#archImg40{content: url(../images/digitalArchive/IMG_2400.jpg);}
+#archImg41{content: url(../images/digitalArchive/IMG_2401.jpg);}
+#archImg42{content: url(../images/digitalArchive/IMG_2402.jpg);}
+
+/* Natalie Imbruglia - Left in the Middle */
+#archImg43{content: url(../images/digitalArchive/IMG_2403.jpg);}
+#archImg44{content: url(../images/digitalArchive/IMG_2404.jpg);}
+#archImg45{content: url(../images/digitalArchive/IMG_2405.jpg);}
+
+/* Rainer Maria - Look Now Look Again */
+#archImg46{content: url(../images/digitalArchive/IMG_2417.jpg);}
+#archImg47{content: url(../images/digitalArchive/IMG_2418.jpg);}
+#archImg48{content: url(../images/digitalArchive/IMG_2419.jpg);}
+
+/* The Get Up Kids - Four Minute Mile */
+#archImg49{content: url(../images/digitalArchive/IMG_2420.jpg);}
+#archImg50{content: url(../images/digitalArchive/IMG_2421.jpg);}
+#archImg51{content: url(../images/digitalArchive/IMG_2422.jpg);}
+
+/* The Get Up Kids - Something to Write Home About */
+#archImg52{content: url(../images/digitalArchive/IMG_2456.jpg);}
+#archImg53{ content: url(../images/digitalArchive/IMG_2457.jpg);}
+#archImg54{ content: url(../images/digitalArchive/IMG_2458.jpg); }
+
+/* allthepiecesgatheredbymay - demos */
+#archImg55{ content: url(../images/digitalArchive/IMG_2423.jpg); }
+#archImg56{ content: url(../images/digitalArchive/IMG_2424.jpg); }
+
+/* The Civil War in France - early discography */
+#archImg57{ content: url(../images/digitalArchive/IMG_2447.jpg); }
+#archImg58{ content: url(../images/digitalArchive/IMG_2449.jpg); }
+
+/* OLTH - every day is sOmeOne's speciaL day */
+#archImg59{ content: url(../images/digitalArchive/IMG_2450.jpg); }
+#archImg60{ content: url(../images/digitalArchive/IMG_2452.jpg); }
+
+/* Middle Earth - 2023 Demo */
+#archImg61{ content: url(../images/digitalArchive/IMG_2427.jpg); }
+#archImg62{ content: url(../images/digitalArchive/IMG_2428.jpg); }
+#archImg63{ content: url(../images/digitalArchive/IMG_2429.jpg); }
+
+/* Stumik Bug/Bottle Violence - stumikviolence */
+#archImg64{ content: url(../images/digitalArchive/IMG_2430.jpg); }
+#archImg65{ content: url(../images/digitalArchive/IMG_2431.jpg); }
+#archImg66{ content: url(../images/digitalArchive/IMG_2432.jpg); }
+
+/* Lanemeyer - If Theres a Will, Theres Still Nothing */
+#archImg67{ content: url(../images/digitalArchive/IMG_2433.jpg); }
+#archImg68{ content: url(../images/digitalArchive/IMG_2434.jpg); }
+#archImg69{ content: url(../images/digitalArchive/IMG_2435.jpg); }
+
+/* pageninetynine - document #5 */
+#archImg70{ content: url(../images/digitalArchive/IMG_2436.jpg); }
+#archImg71{ content: url(../images/digitalArchive/IMG_2437.jpg); }
+#archImg72{ content: url(../images/digitalArchive/IMG_2438.jpg); }
+
+/* Your Arms Are My Cocoon - S/T */
+#archImg73{ content: url(../images/digitalArchive/IMG_2439.jpg); }
+#archImg74{ content: url(../images/digitalArchive/IMG_2440.jpg); }
+#archImg75{ content: url(../images/digitalArchive/IMG_2441.jpg); }
+
+/* herlovebeheadsdaisies - carving initials */
+#archImg76{ content: url(../images/digitalArchive/IMG_2442.jpg); }
+#archImg77{ content: url(../images/digitalArchive/IMG_2443.jpg); }
+#archImg78{ content: url(../images/digitalArchive/IMG_2444.jpg); }
+
+/* In Loving Memory - As Years Pass And Feel Like Seconds */
+#archImg79{ content: url(../images/digitalArchive/IMG_2445.jpg); }
+#archImg80{ content: url(../images/digitalArchive/IMG_2446.jpg); }
+
+/* algernon cadwallader - S/T */
+#archImg81{ content: url(../images/digitalArchive/IMG_2459.jpg); }
+#archImg82{ content: url(../images/digitalArchive/IMG_2460.jpg); }
+#archImg83{ content: url(../images/digitalArchive/IMG_2461.jpg); }
+
+/* Jejune - R.I.P. */
+#archImg84{ content: url(../images/digitalArchive/IMG_2462.jpg); }
+#archImg85{ content: url(../images/digitalArchive/IMG_2463.jpg); }
+#archImg86{ content: url(../images/digitalArchive/IMG_2464.jpg); }
