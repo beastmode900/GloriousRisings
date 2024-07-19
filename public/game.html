@@ -13,7 +13,7 @@
     img{
         width: 300px;
         height: auto;
-        max-height: 400px;
+        max-height: 300px;
         padding: 2%;
     }
 
@@ -34,11 +34,21 @@
         padding: 2%;
     }
 
+    #musicGame{
+        border: solid black 2px;
+    }
 
+    #TTT-btn{
+        left: 6px
+    }
 
+    #UTTT-btn{
+        left: 5px;
+    }
 
-
-
+    #music-btn{
+        left: 5px;
+    }
 
 </style>
     
@@ -72,19 +82,19 @@
 
     <div> <a href="tictactoe.html"> <img src="images/tictactoe.jpg" alt=""> </a>
         <br>
-             <a href="tictactoe.html"> <button class="gameButton">tictactoe</button> </a>
+             <a href="tictactoe.html"> <button class="gameButton" id="TTT-btn">tictactoe</button> </a>
        </div>
 
        <div> <a href="ultimateTTT.html"> <img src="images/ultimateTTT.jpg" alt=""> </a>
             <br>
-            <a href="ultimateTTT.html"> <button class="gameButton">ultimateTTT</button> </a>
+            <a href="ultimateTTT.html"> <button class="gameButton" id="UTTT-btn">ultimateTTT</button> </a>
        </div>
-
-       <div> <a href="musicguessing.html"> <img src="images/comingsoon.jpg" alt=""> </a>
+<br><br>
+       <div> <a href="musicguessing.html"> <img src="images/musicGame.png" id="musicGame"> </a>
              <br>
-             <a href="musicguessing.html"> <button class="gameButton">music guessing</button> </a> 
+             <a href="musicguessing.html"> <button class="gameButton" id="music-btn">music guessing</button> </a> 
        </div>
-        
+        <br><br>
 
     <nav id="mobile">
         <a href="blog.html">  <button class="mobileBTN">blog</button></a>

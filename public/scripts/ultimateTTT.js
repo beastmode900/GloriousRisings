@@ -1,5 +1,5 @@
 const winAudio = new Audio("sounds/kh1fanfare.wav");
-
+winAudio.volume = .03;
 const cells = document.querySelectorAll(".cells");
 const bigCells = document.querySelectorAll(".bigCell");
 const turnText = document.querySelector("#turnText");

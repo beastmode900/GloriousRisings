@@ -10,6 +10,7 @@ new game button
 
 */
 const winAudio = new Audio("sounds/kh1fanfare.wav");
+winAudio.volume = .3;
 const cells = document.querySelectorAll(".cells");
 const turnText = document.querySelector("#turnText");
 const winConditions = [

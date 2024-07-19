@@ -78,7 +78,7 @@ function displayTopUsers(users) {
   const top10Users = sortedUsers.slice(0, 10);
 
   // Display the top 10 users in the console (or in your UI)
-  console.log('Top 10 Users:');
+  //console.log('Top 10 Users:');
   // top10Users.forEach(([userId, user]) => {
   //   console.log(`${user.name} - Score: ${user.score}`);
   // });
@@ -86,7 +86,7 @@ function displayTopUsers(users) {
     let id = i.toString();
     let position = i + 1;
     let x = document.getElementById(id);
-    x.innerHTML = "#" + position +": " + top10Users[i][1].name + " - Score: " + top10Users[i][1].score
+    x.innerHTML = "#" + position +": " + top10Users[i][1].name + " <br> Score: " + top10Users[i][1].score
   }
 
 }
